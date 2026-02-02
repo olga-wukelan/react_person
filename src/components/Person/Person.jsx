@@ -3,7 +3,9 @@ export const Person = ({ person }) => {
   let partnerLabel = '';
 
   if (isMarried) {
-    const relationship = sex === 'm' ? 'wife' : 'husband';
+    const relationship = sex === 'm'
+    ? 'wife'
+    : 'husband';
 
     partnerLabel = `${partnerName} is my ${relationship}`;
   } else {
